@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <h1>我要买酒！</h1>
+  <button id="btn">检查</button>
+
+  <script>
+    let btn = document.getElementById(`btn`);
+    btn.addEventListener(`click`, function () {
+      let age = prompt(`你多大了`);
+      age = Number(age);
+      console.log(typeof age)
+      if (age >= 19) {
+        console.log(`你可以买酒`)
+      } else {
+        console.log(`你不可以买酒`)
+      }
+    });
+  </script>
+</body>
+
+</html>
